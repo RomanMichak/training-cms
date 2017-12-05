@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Training_Cms>
+            <version>0.1.0</version>
+        </Training_Cms>
+    </modules>
+    <global>
+        <helpers>
+            <training_cms>
+                <class>Training_Cms_Helper</class>
+            </training_cms>
+        </helpers>
+        <models>
+            <training_cms>
+                <class>Training_Cms_Model</class>
+            </training_cms>
+        </models>
+    </global>
+</config>
