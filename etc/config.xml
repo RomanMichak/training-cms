@@ -18,11 +18,9 @@
                 <resourceModel>training_cms_resource</resourceModel>
             </training_cms>
             <training_cms_resource>
-                <class>Training_Cms_Model_Mysql4</class>
+                <class>Training_Cms_Model_Resource</class>
                 <entities>
-                    <page>
-                        <table>training_cms_page</table>
-                    </page>
+                    <page><table>training_cms_page</table></page>
                 </entities>
             </training_cms_resource>
         </models>
