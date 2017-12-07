@@ -2,7 +2,6 @@
 
 class Training_Cms_Model_Page extends Mage_Core_Model_Abstract
 {
-
     protected function _construct()
     {
         $this->_init('training_cms/page');
@@ -16,6 +15,4 @@ class Training_Cms_Model_Page extends Mage_Core_Model_Abstract
     {
         return $this->load($code, 'code');
     }
-
-
 }
