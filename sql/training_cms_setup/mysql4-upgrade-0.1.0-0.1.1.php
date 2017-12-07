@@ -7,8 +7,17 @@ $installer->startSetup();
 /**
  * Altering table training_cms_page with adding category_id field
  */
-$installer->run("
-	ALTER TABLE {$installer->getTable('training_cms/page')} 
-	  ADD `category_id` INT(11) UNSIGNED NOT NULL DEFAULT 0 AFTER `page_id`; 
-	");
+
+
+$installer->getConnection()
+    ->addColumn($installer->getTable('training_cms/page'),
+        'category_id',
+        array(
+            'type' => Varien_Db_Ddl_Table::TYPE_INTEGER,
+            'nullable' => false,
+            'unsigned' => true,
+            'comment'  => 'CategoryId'
+        )
+    );
+
 $installer->endSetup();
