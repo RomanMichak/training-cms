@@ -10,6 +10,7 @@ class Training_Cms_Block_Adminhtml_Page_Grid extends Mage_Adminhtml_Block_Widget
         $this->setDefaultSort('id');
     }
 
+
     protected function _prepareCollection()
     {
         /** @var Training_Cms_Model_Resource_Page_Collection $collection */
@@ -28,9 +29,8 @@ class Training_Cms_Block_Adminhtml_Page_Grid extends Mage_Adminhtml_Block_Widget
                'header' => $this->__('Page Id'),
                'width' => '50px',
                'index' => 'page_id',
-               'filter' => false,
                'sortable' => true,
-
+               'filter' => false,
            )
        );
        $this->addColumn(
@@ -39,8 +39,8 @@ class Training_Cms_Block_Adminhtml_Page_Grid extends Mage_Adminhtml_Block_Widget
                'header' => $this->__('Category Id'),
                'width' => '50px',
                'index' => 'category_id',
-               'filter' => false,
                'sortable' => false,
+               'filter' => false,
            )
        );
        $this->addColumn(
@@ -49,8 +49,7 @@ class Training_Cms_Block_Adminhtml_Page_Grid extends Mage_Adminhtml_Block_Widget
                'header' => $this->__('Code'),
                'width' => '50px',
                'index' => 'code',
-               'filter' => false,
-               'sortable' => true,
+               'sortable' => false,
            )
        );
        $this->addColumn(
@@ -59,8 +58,7 @@ class Training_Cms_Block_Adminhtml_Page_Grid extends Mage_Adminhtml_Block_Widget
                'header' => $this->__('Title'),
                'width' => '50px',
                'index' => 'title',
-               'filter' => false,
-               'sortable' => true,
+               'sortable' => false,
            )
        );
        $this->addColumn(
@@ -69,8 +67,8 @@ class Training_Cms_Block_Adminhtml_Page_Grid extends Mage_Adminhtml_Block_Widget
                'header' => $this->__('Url'),
                'width' => '50px',
                'index' => 'url',
+               'sortable' => false,
                'filter' => false,
-               'sortable' => true,
            )
        );
        $this->addColumn(
@@ -79,8 +77,8 @@ class Training_Cms_Block_Adminhtml_Page_Grid extends Mage_Adminhtml_Block_Widget
                'header' => $this->__('Description'),
                'width' => '50px',
                'index' => 'description',
+               'sortable' => false,
                'filter' => false,
-               'sortable' => true,
            )
        );
        $this->addColumn(
@@ -89,8 +87,8 @@ class Training_Cms_Block_Adminhtml_Page_Grid extends Mage_Adminhtml_Block_Widget
                'header' => $this->__('Short Description'),
                'width' => '50px',
                'index' => 'short_description',
+               'sortable' => false,
                'filter' => false,
-               'sortable' => true,
            )
        );
        $this->addColumn(
@@ -99,8 +97,8 @@ class Training_Cms_Block_Adminhtml_Page_Grid extends Mage_Adminhtml_Block_Widget
                'header' => $this->__('Created At'),
                'width' => '50px',
                'index' => 'created_at',
-               'filter' => false,
                'sortable' => true,
+               'filter' => false,
            )
        );
        $this->addColumn(
@@ -109,8 +107,8 @@ class Training_Cms_Block_Adminhtml_Page_Grid extends Mage_Adminhtml_Block_Widget
                'header' => $this->__('Updated At'),
                'width' => '50px',
                'index' => 'updated_at',
-               'filter' => false,
                'sortable' => true,
+               'filter' => false,
            )
        );
 
