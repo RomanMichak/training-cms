@@ -10,7 +10,6 @@ class Training_Cms_Block_Adminhtml_Page_Grid extends Mage_Adminhtml_Block_Widget
         $this->setDefaultSort('id');
     }
 
-
     protected function _prepareCollection()
     {
         /** @var Training_Cms_Model_Resource_Page_Collection $collection */

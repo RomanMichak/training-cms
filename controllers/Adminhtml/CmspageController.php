@@ -12,6 +12,7 @@ class Training_Cms_Adminhtml_CmspageController extends Mage_Adminhtml_Controller
      */
     public function listAction()
     {
+
         $this->_getSession()->setFormData([]);
 
         $this->_title($this->__('Training Cms'))
@@ -131,7 +132,6 @@ class Training_Cms_Adminhtml_CmspageController extends Mage_Adminhtml_Controller
                 $this->_getSession()->addSuccess($this->__('Page (id %d) was successfully deleted', $id));
                 $this->_redirect('*/*');
             }
-
 
         } catch (Exception $exception) {
             Mage::logException($exception);
