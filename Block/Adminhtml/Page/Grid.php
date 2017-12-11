@@ -22,7 +22,6 @@ class Training_Cms_Block_Adminhtml_Page_Grid extends Mage_Adminhtml_Block_Widget
 
     protected function _prepareColumns()
     {
-
        $this->addColumn(
            'page_id',
            array(
@@ -112,28 +111,15 @@ class Training_Cms_Block_Adminhtml_Page_Grid extends Mage_Adminhtml_Block_Widget
            )
        );
 
-
         return parent::_prepareColumns();
     }
 
+    /**
+     * @param Training_Cms_Model_Page $row
+     * @return string
+     */
     public function getRowUrl($row)
     {
         return $this->getUrl('*/*/edit', array('id' => $row->getId()));
-    }
-
-    protected function _prepareMassaction()
-    {
-        $modelPk = Mage::getModel('training_cms/page')->getResource()->getIdFieldName();
-        $this->setMassactionIdField($modelPk);
-        $this->getMassactionBlock()->setFormFieldName('ids');
-        // $this->getMassactionBlock()->setUseSelectAll(false);
-        $this->getMassactionBlock()->addItem(
-            'delete',
-            array(
-                'label'=> $this->__('Delete'),
-                'url'  => $this->getUrl('*/*/massDelete'),
-            )
-        );
-        return $this;
     }
 }
